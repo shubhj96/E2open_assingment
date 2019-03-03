@@ -1,0 +1,11 @@
+.cell {
+    height :50px;
+    width : 10%;
+    display: inline-block;
+    border: 1px solid gray;
+    vertical-align: bottom;
+    padding : 10px;
+}
+.title-grid{
+    background-color: lightgray;
+}
