@@ -156,7 +156,7 @@ class Country extends Component {
           </div>
         </div>
         <div className="App">
-          <Grid items ={this.state.items} pagination = {this.state.paginationData} onPageSelected={(selectedPage) => this.onPageSelected(selectedPage)}/>
+          <Grid items ={this.state.items} pagination = {this.state.paginationData} pageSelected= {this.state.pageSelected} onPageSelected={(selectedPage) => this.onPageSelected(selectedPage)}/>
         </div>
       </div>  
     );

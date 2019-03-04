@@ -39,7 +39,7 @@ class Grid extends Component {
     // creating the object for the repeating element for the pagination
     var paginationBlocks = this.props.pagination.map(function(pageIndex, i) {
       return (
-          <div key={pageIndex} className={"page-index-box " + ((scope.props.pageSelected === i) ? "page-index-active" : "")} onClick={() => scope.onPageSelected({pageIndex})}>{pageIndex}</div>
+          <div key={pageIndex} className={((scope.props.pageSelected === pageIndex) ? "page-index-active page-index-box" : "page-index-box")} onClick={() => scope.onPageSelected({pageIndex})}>{pageIndex}</div>
       );
     });
 
