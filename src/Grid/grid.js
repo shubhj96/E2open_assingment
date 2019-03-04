@@ -50,7 +50,7 @@ class Grid extends Component {
         <div className="pagination-container">
           {paginationBlocks}
         </div>
-        <div>
+        <div className = "grid-container">
           <Cell titleClass = {"title-grid"} key ={"name"}         title = {"Name"}/>
           <Cell titleClass = {"title-grid"} key ={"IS02Code"}     title = {"ISO2 Code"}/>
           <Cell titleClass = {"title-grid"} key ={"Region"}       title = {"Region"}/>

@@ -6,10 +6,13 @@
     border: 1px solid gray;
 }
 .pagination-container {
-    display: inline-block;
     margin: 10px;
-    margin-left: 58%;
+    float: right;
+    margin-right: 15%;
 }
 .page-index-active{
     background-color: lightgray;
+}
+.grid-container{
+    clear: both;
 }
