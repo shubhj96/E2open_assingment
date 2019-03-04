@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 import './dropdown.css';
 
+
+/**
+ * class : Dropdown
+ * This is the class that will contain all the dropdown logic.
+ * which will help in creating filter
+ */
 class Dropdown extends Component {
     constructor(props){
         super(props)
     }
   render() {
 
+    // creating the object for the repeating element 
     var listItems = this.props.options.map(function(item) {
         if(item.code !== undefined){
             return (
-                <option value={item.code}>{item.name}</option>
+                <option key={item.code} value={item.code}>{item.name}</option>
             );
         } else {
             return (
-                <option value={item.id}>{item.value}</option>
+                <option key={item.id} value={item.id}>{item.value}</option>
             );
         }
         
